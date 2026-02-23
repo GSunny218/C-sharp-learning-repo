@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Hello
 {
@@ -121,13 +122,61 @@ namespace Hello
             //double a = Math.Abs(-38);
             //Console.WriteLine(a);
 
+            //var keyword
+            //var name = "Sunny";
+
+            //const keyword
+            // const float pi = 3.14F;
+
+            //Numeric Formatting
+            //double value = 1000D / 12.34D;
+            //Console.WriteLine(value);
+            //Console.WriteLine(string.Format("{0} {1}",value,10000));
+            //Console.WriteLine(string.Format("{0:0.0}", value));
+            //Console.WriteLine(string.Format("{0:0.00}",value));
+            //Console.WriteLine(string.Format("{0:0.000}", value));
+            //Console.WriteLine(value.ToString("C"));
+            //Console.WriteLine(value.ToString("C0"));
+            //Console.WriteLine(value.ToString("C1"));
+            //Console.WriteLine(value.ToString("C2"));
+
+            //Console.WriteLine(value.ToString("C", CultureInfo.CurrentCulture));
+            //Console.WriteLine(value.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+            //Console.WriteLine(value.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+
+            //TryParse method
+            //bool success = true;
+            //while (success) {
+            //    Console.WriteLine("Enter a number: ");
+            //    string numInput = Console.ReadLine();
+            //    if (int.TryParse(numInput, out int num))
+            //    {   
+            //        success = false;
+            //        Console.WriteLine("You entered: " + num);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Invalid input");
+            //    }
+            //}
+
+            //Verbatim string literal
+            // \t \n \\ \" = \
+            //string filePath = "C:\\Users\\Sunny\\Desktop\\file.txt";
+            //string filePath = @"C:\Users\Sunny\Desktop\file.txt";
+            //string speech = "He said \"something\"";
+            //string speech = @"He said ""something""";
+            //sring speech = "He said \\something\\";
+            //string speech = @"He said \something\";
+            //string speech = "Hello 'someone'";
+
             //string hello = "Hello world";
             //Console.WriteLine(hello.Length);
             //Console.WriteLine(hello.ToUpper());
             //Console.WriteLine(hello.ToLower());
             //Console.WriteLine(string.Concat(hello, "You are nice"));
 
-            //String ipterpolation
+            //String interpolation
             //string name = Console.ReadLine();
             //string candies = Console.ReadLine();
             //Console.WriteLine($"Your name is {name}. You will get {candies} candies");
@@ -192,9 +241,9 @@ namespace Hello
             //Console.WriteLine(Average(4, 5));
 
             //OOPS
-            Player player1 = new Player();
-            Console.WriteLine(player1.getHealth(90));
-            player1.setHealth(50);
+            //Player player1 = new Player();
+            //Console.WriteLine(player1.getHealth(90));
+            //player1.setHealth(50);
 
             Console.ReadLine();
         }
