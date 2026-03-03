@@ -5,20 +5,23 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
+using System.Net.Http;
+using System.Threading;
+using System.Data.SqlTypes;
 
 namespace Hello
 {
     internal class Program
     {
-        static void Greet(string name)
-        {
-            Console.WriteLine("Hello from Greet method! "+name);
-        }
+        //static void Greet(string name)
+        //{
+        //    Console.WriteLine("Hello from Greet method! "+name);
+        //}
 
-        static float Average(int a, int b)
-        {
-            return (a + b) / 2;
-        }
+        //static float Average(int a, int b)
+        //{
+        //    return (a + b) / 2;
+        //}
         static void Main(string[] args)
         {
             // C# comments.
@@ -181,6 +184,63 @@ namespace Hello
             //string candies = Console.ReadLine();
             //Console.WriteLine($"Your name is {name}. You will get {candies} candies");
 
+            //String Empty
+            //string name = string.Empty;
+            //if (name != string.Empty) {
+            //    Console.WriteLine("Name is not empty");
+            //} else {
+            //    Console.WriteLine("Name is empty");
+            //}
+            //Console.WriteLine(name);
+
+            //String equals function
+            //string message = "Hello";     // Ex 1
+            //string compare = "Hello";
+            //if (message.Equals(compare)) {
+            //    Console.WriteLine("Strings are equal");
+            //} else {
+            //    Console.WriteLine("Strings are not equal");
+            //}
+            //string name = "";            // Ex 2
+            //if (name.Equals(""))
+            //{
+            //    Console.WriteLine("Name is empty");
+            //}
+            //else {                 
+            //    Console.WriteLine("Name is not empty");
+            //}
+            //char[] chars = new char[] { 'H', 'e', 'l', 'l', 'o' };
+            //string newCompare = new string(chars);
+            //if (message.Equals(newCompare)) {
+            //    Console.WriteLine("Strings are equal");
+            //} else {
+            //    Console.WriteLine("Strings are not equal");
+            //}
+            //string messege = "C# is awesome";
+            //for (int i = 0; i < messege.Length; i++) {
+            //    Console.WriteLine(message[i]);
+            //}
+
+            //String iteration looping
+            //for (int i = 0; i < messege.Length; i++) {
+            //    Console.Write(messege[i]);
+            //    Thread.Sleep(1000);   //1000ms = 1sec
+            //}
+
+            //String null or empty
+            //Console.WriteLine("Enter name: ");
+            //string name = null;
+            //if (string.IsNullOrEmpty(name)) {
+            //    Console.WriteLine("name is empty");
+            //}
+
+            //Print a string in reverse
+            //Console.WriteLine("Enter: ");
+            //string message = Console.ReadLine();
+            //for (int i = message.Length - 1; i >= 0; i--) { 
+            //    Console.Write(message[i]);
+            //}
+
             //String methods
             //string hello = "Hello \" world";
             //Console.WriteLine(hello[0]);
@@ -235,6 +295,27 @@ namespace Hello
             //for (int i = 0; i < 5; i++) {
             //    Console.WriteLine(i);
             //}
+
+            //Array
+            //Console.WriteLine("Enter length of array: ");
+            //int arrLength = Convert.ToInt32(Console.ReadLine());
+            //int[] numbers = new int[10];
+            //int[] numbers = new int[arrLength];
+            //Console.WriteLine($"{numbers[0]} {numbers[1]} {numbers[2]}");
+            //for (int i = 0; i < numbers.Length; i++) {
+            //    Console.WriteLine("Enter a number: ");
+            //    numbers[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.Write($"{numbers[i]} ");
+            //}
+            //foreach (var num in numbers)
+            //{
+            //    Console.Write($"{num} ");
+            //}
+            const int angleCount = 3;
+
 
             //Methods
             //Greet("Sunny");
