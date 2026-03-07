@@ -469,6 +469,21 @@ namespace Hello
             //ChangeName(ref name, newName);
             //Console.WriteLine($"New Name: {name}");
 
+            //Exceptions handling
+            //try {
+            //    Console.WriteLine("Enter a number: ");
+            //    int num = Convert.ToInt32(Console.ReadLine());
+            //} catch (OverflowException e) {
+            //    Console.WriteLine("Please enter a number less than 2 billion");
+            //    Console.WriteLine($"Error: {e.Message}");
+            //} catch (FormatException e) {
+            //    Console.WriteLine("Please only enter number!");
+            //    Console.WriteLine($"Error: {e.Message}");
+            //} catch (Exception e) {
+            //    Console.WriteLine("Something went wrong!");
+            //    Console.WriteLine($"Error: {e.Message}");
+            //}
+
             //OOPS
             //Player player1 = new Player();
             //Console.WriteLine(player1.getHealth(90));
