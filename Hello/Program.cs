@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Net.Http;
 using System.Threading;
 using System.Data.SqlTypes;
+using System.CodeDom;
 
 namespace Hello
 {
@@ -442,9 +443,31 @@ namespace Hello
             //Greet("Sunny");
             //Console.WriteLine(Average(4, 5));
 
-
             //Optional parameters
-            Console.WriteLine(Add(5));
+            //Console.WriteLine(Add(5));
+
+            //Named parameter
+            //string nameInput = "Sunny";
+            //int ageInput = 19;
+            //string addressInput = "Lal Dongar";
+            //PrintDetails(address: addressInput, age: ageInput, name: nameInput);
+
+            //Out parameters
+            //int num = 0;
+            //test(out num);
+            //Console.WriteLine(num);
+
+            //Reference parameter
+            //int num = 10;                  //1
+            //string name = "Sunny";
+            //Assign(ref num, ref name);
+            //Console.WriteLine(num);
+            //Console.WriteLine(name);
+            //string name = "Sunny";                  //2
+            //Console.Write("Enter your new name: ");
+            //string newName = Console.ReadLine();
+            //ChangeName(ref name, newName);
+            //Console.WriteLine($"New Name: {name}");
 
             //OOPS
             //Player player1 = new Player();
@@ -454,8 +477,30 @@ namespace Hello
             Console.ReadLine();
         }
 
-        static int Add(int a, [Optional] int b) {
-            return a + b;
-        }
+        //Optional parameters function
+        //static int Add(int a, int b = default) {
+        //    return a + b;
+        //}
+
+        //Named parameter function
+        //static void PrintDetails(string name, int age, string address) {
+        //    Console.WriteLine($"Name: {name}");
+        //    Console.WriteLine($"Age: {age}");
+        //    Console.WriteLine($"Address: {address}");
+        //}
+
+        //Out parameter function
+        //static void test(out int num) {
+        //    num = 5;
+        //}
+
+        //Reference parameter function
+        //static void Assign(ref int num, ref string name) {  //1
+        //    name = "Sahil"; 
+        //    num = 20;
+        //}
+        //static void ChangeName(ref string name, string newName) {   //2
+        //    name = newName;
+        //}
     }
 }
