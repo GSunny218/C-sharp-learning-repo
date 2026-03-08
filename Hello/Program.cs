@@ -12,10 +12,51 @@ using System.CodeDom;
 
 namespace Hello
 {
+    class Person {
+        private string name;
+        private int age;
+        /*public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = !string.IsNullOrEmpty(value) ? value : "Invalid name";
+            }
+        }*/
+        public string Name { get => name; set => name = !string.IsNullOrEmpty(value) ? value : "Invalid name"; }   //With Arrow
+
+        /*public int Age
+        {
+            get
+            {
+                return age;
+            }
+            set
+            {
+                age = value >= 0 && value <= 150 ? value : -1;
+            }
+        }*/
+        public int Age { get => age; set => age = value >= 0 && value <= 150 ? value : -1; }    //With Arrow
+
+        public Person(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+            Name = name;
+            Age = age;
+        }
+
+        public string ReturnDetails() { 
+            return $"Name: {name}, Age: {age}";
+        }
+
+    }
+
     internal class Program
     {
-        //Structure
-        
         static void Main(string[] args)
         {
             // C# comments.
@@ -187,6 +228,13 @@ namespace Hello
             //Player player1 = new Player();
             //Console.WriteLine(player1.getHealth(90));
             //player1.setHealth(50);
+
+            //Class Fields
+            Person person = new Person("Sunny", 19);
+            Console.WriteLine($"Details: {person.ReturnDetails()}");
+            person.Name = "Sahil";
+            person.Age = 19;
+            Console.WriteLine($"Details: {person.ReturnDetails()}");
 
             Console.ReadLine();
         }
