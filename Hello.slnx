@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Hello/Hello.csproj" Id="60c56bdf-7237-49fa-92fd-412b06c4cc9a" />
+  <Project Path="Structures/Structures.csproj" Id="49f68621-48d9-4aa6-8b50-8203918aed01" />
 </Solution>
